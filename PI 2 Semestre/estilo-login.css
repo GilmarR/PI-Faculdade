@@ -1,0 +1,217 @@
++* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #F8F8F8;
+	font-family: Helvetica, Arial, sans-serif;
+
+}
+
+.form-box {
+	width: 380px;
+	height: 550px;
+	position: relative;
+	margin: 6% auto 10px;
+	background-color: #fff;
+	padding: 5px;
+	overflow: hidden;
+	border: 1px solid #D8D8D8;
+}
+
+.logo-login {
+	width: 200px;
+	height: 80px;
+	margin: 30px 0 0 70px;
+}
+
+.botao-box {
+	width: 240px;
+	margin: 35px auto;
+	position: relative;
+	-webkit-box-shadow: 0 0 10px 2px #002366;
+	        box-shadow: 0 0 10px 2px #002366;
+	border-radius: 30px;
+	background-color: #C0C0C0;
+}
+.toggle-btn {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	position: relative;
+	outline: none;
+	color: #fff;
+	font-weight: bold;
+}
+#botao {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 130px;
+	height: 100%;
+	background: #002366;
+	border-radius: 30px;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+	text-align: center;
+}
+
+/*-----------------------------------------------------------------
+					Área do formulário
+-----------------------------------------------------------------*/
+
+.input-group {							
+	top: 220px;
+	position: absolute;
+	width: 280px;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+
+.input-field {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.label-input,
+#checkLogin1,
+#checkLogin2 {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+
+.icone-login {
+	margin-right: 10px;
+}
+
+.submit-btn {
+	width: 70%;
+	padding: 10px 20px;
+	cursor: pointer;
+	display: block;
+	margin: auto; 
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	margin-top: 20px;
+	border: 1px solid #002366;
+	background: #fff;
+	color: #002366;
+	font-weight: bold;
+	-webkit-transition: background-color .6s;
+	-o-transition: background-color .6s;
+	transition: background-color .6s;
+}
+
+.submit-btn:hover {
+	background-color: #002366;
+	color: #fff;
+	border-color: #58af9b;
+}
+
+.check-box {
+	margin: 20px 5px 0 0;
+}
+
+.input-group span {
+	margin: auto;
+	color: #777;
+	font-size: 15px;
+	position: absolute;
+}
+
+#login {
+	left: 50px;
+}
+
+#registro {							
+	left: 450px;
+}
+
+#recuperar-senha {
+	top: 500px;
+	left: 50px;
+}
+
+.psenha {
+	margin: 0 auto;
+}
+
+/*-----------------------------------------------------------------
+					Fim da Área do formulário
+-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------
+						  Redes Sociais
+-----------------------------------------------------------------*/
+
+.form-box-sociais {					
+	width: 380px;
+	height: 110px;
+	position: relative;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #D8D8D8;
+}
+
+.lista-social-media {                       
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	text-decoration: none;
+	list-style-type: none;
+	margin: 20px 0 25px;
+	margin-left: 70px;
+}
+
+.item-social-media {
+	font-size: 1.3em;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	margin: 0 4px 15px 0;
+	color: #95a5a6;
+	border-radius: 50%
+}  
+
+.item-social-media:hover{
+    background-color: #002366;
+    color: #fff;
+    border-color: #58af9b;
+}	
+
+.item-social-media {
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+}
+
+.tittle {
+	font-size: 15px;
+	line-height: 30px;
+	color: #7f8c8d;
+	text-align: center;
+}							
+
+/*-----------------------------------------------------------------
+						  Redes Sociais
+-----------------------------------------------------------------*/

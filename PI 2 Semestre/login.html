@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title> </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="estilo-login.css">
+
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script src="app.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="form-box">
+
+      <div>                                   <!--Logo-->
+        <a href="Index.html">
+          <img src="imagens/logo azul.png" class="logo-login">
+        </a>
+      </div>                                  <!--Fim do Logo-->
+
+      <div class="botao-box">
+        
+        <div id="botao"></div>                        <!-- Área do botão login/ registro -->
+          <button type="button" class="toggle-btn" onclick="login()">Login</button>
+          <button type="button" class="toggle-btn" onclick="registro()">Registrar</button>
+        </div>                                          <!-- Fim da Área do botão login/ registro -->
+
+      <form id="login" class="input-group">  <!-- Área de login -->
+          <label class="label-input">
+              <i class="far fa-user icone-login"></i>
+              <div id="checkLogin1">   <!-- Área de verificar login (retirar dps) -->
+              <input type="text" class="input-field" placeholder="Insira Nome ou Email" name="usuario" required>
+            </div>
+          </label>
+          <p id="usuarioIncorreto"></p>
+          <label class="label-input">
+              <i class="fas fa-unlock-alt icone-login"></i>
+              <div id="checkLogin2">   <!-- Área de verificar login (retirar dps) -->
+              <input type="password" class="input-field" placeholder="Insira senha" name="senha" required>
+            </div>
+          </label>
+          <p id="senhaIncorreta"></p>
+          <a href="" class="psenha">Esqueci minha senha</a>
+          <button type="submit" class="submit-btn" onclick="return Login()"> Logar </button>
+      </form>                                 <!-- Fim da Área de login -->
+
+      <form id="registro" class="input-group">   <!-- Área de Registro -->
+        <label class="label-input">
+          <i class="far fa-user icone-login"></i>
+          <input type="text" class="input-field" placeholder="Nome" required>
+        </label>
+        <label class="label-input">
+          <i class="far fa-envelope icone-login"></i>
+          <input type="email" class="input-field" placeholder="Email" required>
+        </label>
+        <label class="label-input">
+          <i class="fas fa-unlock-alt icone-login"></i>
+          <input type="password" class="input-field" placeholder="Senha" required>
+        </label>
+        <label class="label-input">
+          <i class="fas fa-unlock-alt icone-login"></i>
+          <input type="password" class="input-field" placeholder="Insira a senha novamente" required>
+        </label>
+        <button type="submit" class="submit-btn"> Registrar </button>
+      </form>                                         <!-- Fim da Área de registro -->
+
+    </div>
+
+
+
+    <div class="form-box-sociais">      <!--Login através de redes sociais-->
+
+      <p class="tittle">Ou logue atráves de sua rede social</p>  
+       <div class="social-media">      
+            <ul class="lista-social-media">
+              <a href="" class="item-social-media">
+                <li>
+                  <i class="fab fa-facebook-f"></i>
+                </li>
+              </a>
+              <a href="" class="item-social-media">
+                <li>
+                  <i class="fab fa-instagram"></i>
+                </li>
+              </a>
+              <a href="" class="item-social-media">
+                <li>
+                  <i class="fab fa-google-plus-g"></i>
+                </li>
+              </a>
+            </ul>
+        </div>                          <!--Fim do Login através de redes sociais-->
+    </div>
+
+
+
+
+
+    <script type="text/javascript">
+      var x = document.getElementById ('login');
+      var y = document.getElementById ('registro');
+      var z = document.getElementById ('botao');
+
+      function registro() {
+        x.style.left = '-400px';
+        y.style.left = '50px';
+        z.style.left = '110px';
+      }
+
+      function login() {
+        x.style.left = '50px';
+        y.style.left = '450px';
+        z.style.left = '0';
+      }
+
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

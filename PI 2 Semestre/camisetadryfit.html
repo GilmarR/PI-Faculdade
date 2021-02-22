@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>RVAN Confecções</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+
+    <script src="app.js"></script>
+
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+
+    <header>             <!-- Cabeçalho -->
+     <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mt-4 mb-4">               <!-- Logo -->
+          <a href="Index.html">        
+            <img src="imagens/logo azul.png" id="logo-index"> 
+          </a>
+        </div>                                                   <!-- Fim do Logo -->
+      </div>
+    </div>
+
+      <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse center-nav" id="navegacao">
+                <ul class="navbar-nav mt-2 mb-1">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Camisetas</a>
+                    </li>
+                    <span class="divisor"></span>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Blusas</a>
+                    </li >
+                    <span class="divisor"></span>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Bermudas</a>
+                    </li>
+                    <span class="divisor"></span>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Calças</a>
+                    </li>
+                    <span class="divisor"></span>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Máscara</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-nav">
+              <li class="nav-item border rounded-circle mx-2">
+                <a href="carrinho.html">
+                  <i class="fas fa-shopping-cart p-2 text-light"></i>
+                </a>
+              </li>
+              <li class="nav-item border rounded-circle mx-2 search-icon">
+                <a href="login.html">
+                  <i class="fas fa-user p-2 text-light"></i>
+                </a>
+              </li>
+            </div>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div class="container border-test">
+        <div class="row mt-4">
+          <div class="col-md-2"></div>
+          <div class="col-md-5 text-center border-test2">
+            <img src="imagens/camisetadryfit.png" class="img-fluid">
+          </div>
+          <div class="col-md-4 border-test2">
+            <h1 class="tittle-camiseta" id="nomeProduto">Camiseta Dry fit</h1>
+            <span style="font-family: Roboto;">
+              <div class="preceFinal">R$ <span id="precoProduto">22.99</span></div>
+              <br>
+              <span style="font-size: 0.90em;">
+                <span style="font-weight: bold;">1x</span> de <span style="font-weight: bold;"> R$ 00.00 </span>
+                <span>sem juros no cartão</span>
+              </span>
+            </span>
+            <br><hr>
+
+            <div class="row">
+              <div class="col-12 text-center">
+                <p class="text-size-clothes">Digite a quantia em cada tamanho</p>
+              </div>
+              <div class="col-md-6">             
+                <div class="input-group input-group-sm">
+                  <input value="0" class="form-control" type="number" min="0" placeholder="0" id="tamanhoP">
+                     <div class="input-group-append">
+                        <span class="input-group-text">P</span>
+                     </div>
+                 </div> 
+              </div>
+              <div class="col-md-6">             
+                <div class="input-group input-group-sm">
+                  <input value="0" class="form-control" type="number" min="0" placeholder="0" id="tamanhoG">
+                     <div class="input-group-append">
+                        <span class="input-group-text">G</span>
+                     </div>
+                 </div> 
+              </div>
+              <div class="col-md-6 mt-2">             
+                <div class="input-group input-group-sm">
+                  <input value="0" class="form-control" type="number" min="0" placeholder="0" id="tamanhoM">
+                     <div class="input-group-append">
+                        <span class="input-group-text">M</span>
+                     </div>
+                 </div> 
+              </div>
+              <div class="col-md-6 mt-2">             
+                <div class="input-group input-group-sm">
+                  <input value="0" class="form-control" type="number" min="0" placeholder="0" id="tamanhoGG">
+                     <div class="input-group-append">
+                        <span class="input-group-text">GG</span>
+                     </div>
+                 </div> 
+              </div>
+
+              <form class="md-form mt-3" action="#">
+                <div class="file-field">
+                  <div class="btn blue-gradient btn-sm float-left">
+                    <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Selecione suas imagens</span>
+                    <input type="file" multiple>
+                  </div>
+                </div>
+              </form>
+              <input type="text" class="detalhesCompra" placeholder="        Escreva detalhes para equipe...">
+
+              <div class="col-12">
+                <hr>
+                <button type="submit" class="submit-btn" onclick="cadastraCompra()"> Comprar </button>
+                <i class="fas fa-tshirt clothesDownload"><a href=""></a></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1 class="text-uppercase text-center tittle">observações</h1>
+        <p>Pedimos para que você faça download de nossa imagem modelo da camiseta escolhida e coloque em algum editor de imagem, pode ser de sua escolha como Paint, PhotoShop e entre outros e colocar a imagem que deseja na camiseta, não precisa ficar perfeito a maneira de como ira colocar, é apenas para termos uma base de como deseja que a camiseta fique, nossos designer irá refazer a imagem com as dimenções certas e irão mandar para você, logo após esperamos a sua confirmação para começarmos a produzir.</p>
+      </div>
+    </section>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,385 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #F8F8F8;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* ------------------------------------------
+                   Cabeçalho 
+---------------------------------------------*/
+
+.divisor {
+	width: 2px;
+	background: #999;
+	margin: 10px 0;
+}
+
+
+#logo-index {                     
+	width: 200px;
+	height: 100px;
+}
+
+.fundo-head {
+	background: linear-gradient(to top, #002366, #1B4EB0, #FFC800);
+}
+
+.nav-head {
+	font-size: 30px;
+	text-align: center;
+	margin-left: 10px;
+	color: #000;
+} 
+
+.faixa-nav {
+	background: #000;
+	height: 40px;
+}
+
+.navegacao {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	margin: 40px 0 0 0;
+	margin-right: 60px;
+}
+
+.center-nav {
+	justify-content: center;
+	font-weight: bold;
+}
+
+.nav-link {
+	margin: 0 15px;
+}
+
+.espacamento-nav {
+	margin-left: 20px;
+	padding-left: 20px;
+	border-left: 2px solid #fff;
+}
+
+
+.espacamento-nav a {
+	color: #fff;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+
+.search-box {                                       /*---------- Botão de pesquisa ----------- */
+	position: absolute;
+	height: 40px;
+	border-radius: 40px;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	padding: 0px;
+}
+
+.search-box:hover > .search-text {
+	width: 240px;
+	padding: 0 16;
+}
+
+.search-box:hover > .search-btn {
+	background: #002366;
+}
+
+.search-btn {
+	color: #fff;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.7s;
+}
+
+.search-text {
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0px;
+	color: #000;
+	font-size: 16px;
+	transition: 0.7s;
+	line-height: 40px;
+	width: 0px;
+}
+
+.search-right {
+	margin-top: 70px;
+}												/*---------- Fim do Botão de pesquisa ----------- */
+
+/* ------------------------------------------
+               Fim do Cabeçalho 
+---------------------------------------------*/
+
+/* ------------------------------------------
+                   1° Seção 
+---------------------------------------------*/
+
+.tittle {
+	font-size: 2.6em;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+}
+
+.tittle2 {
+    font-size: 1em;
+    line-height: 30px;
+    color: #7f8c8d;
+}
+
+.button {
+	margin-left: 320px;
+}
+
+/* ------------------------------------------
+                 Fim da 1° Seção 
+---------------------------------------------*/
+
+/* ------------------------------------------
+                   2° Seção 
+---------------------------------------------*/
+
+.map {
+	border-radius: 20px;
+	box-shadow: 1px 1px #002366;
+}
+
+#logo-footer {
+	width: 70px;
+	height: 100px;
+}
+
+.color-footer {
+	background: #000;
+}
+
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    color: #fff;
+}
+
+/* ------------------------------------------
+                 Fim da 2° Seção 
+---------------------------------------------*/
+
+/* ------------------------------------------
+                   Rodapé 
+---------------------------------------------*/
+
+.sociais-footer {
+	font-size: 1.4em;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	margin: 0 5px 15px 0;
+	text-decoration: none;
+	color: #fff;
+} 
+
+
+/* ------------------------------------------
+                Fim do Rodapé 
+---------------------------------------------*/
+
+/* ------------------------------------------------------------------------------------
+									Catálogo
+------------------------------------------------------------------------------------- */
+
+.border-catalog a {
+	color: #000;
+}
+
+/* ------------------------------------------------------------------------------------
+								Fim do Catálogo
+------------------------------------------------------------------------------------- */
+
+.tittle-camiseta {
+	font-size: 1.45em;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+.preceFinal {
+	font-size: 2em;
+	font-family: Roboto;
+	border: none;
+}
+
+.text-size-clothes {
+	font-size: 0.80em;	
+}
+
+.detalhesCompra {
+	width: 300px;
+	margin-left: 40px;
+}
+
+.submit-btn {
+	width: 50%;
+	padding: 10px 15px;
+	cursor: pointer;
+	margin-left: 60px; 
+	margin-right: 30px;
+	border: 0;
+	border-radius: 10px;;
+	border: 1px solid #002366;
+	background: #fff;
+	color: #002366;
+	font-weight: bold;
+	-webkit-transition: background-color .6s;
+	-o-transition: background-color .6s;
+	transition: background-color .6s;
+}
+
+.submit-btn:hover {
+	background-color: #002366;
+	color: #fff;
+}
+
+.clothesDownload {
+	border: 1px solid #000;
+	border-radius: 7px;
+	padding: 10px 10px;
+	-webkit-transition: background-color .6s;
+	-o-transition: background-color .6s;
+	transition: background-color .6s;
+	cursor: pointer;
+	border: 1px solid #002366;
+	color: #002366;
+}
+
+.clothesDownload:hover {
+	background-color: #002366;
+	color: #fff;
+}
+
+
+
+/*----------------------------------------------------------
+						Carrinho
+-----------------------------------------------------------*/
+
+#logoCarrinho {
+	height: 100px;
+}
+
+.fundo_iconeCarrinho {
+	width: 45px;
+	height: 45px;
+	float: left;
+	background: linear-gradient(0deg, rgb(0, 35, 104) 6.94%, rgb(56, 100, 184) 100%);
+	border: 1px solid #D8D8D8;
+	margin-top: 18px;
+	border-radius: 50%;
+}
+
+.iconeCarrinho {
+	font-size: 1.3em;
+	height: 45px;
+	width: 45px;
+	color: #959595;
+	margin: 6px 0 0 9px;
+}
+
+.localizacao {
+	margin-top: 23px;
+	margin-left: 60px;
+	text-transform: uppercase;
+	color: #0953E2;
+	font-size: 10px;
+	display: flex;
+}
+
+.centerCarrinho.corrente {
+	border-top: 2px solid #002366;
+	margin-right: 10px;
+}
+
+.centerCarrinho {
+	font-size: 12px;
+	line-height: 20px;
+	margin-left: 51px;
+	color: #002366;
+	display: flex;
+	justify-content: center;
+}
+
+.fundo_iconeCarrinhoNull {
+	width: 45px;
+	height: 45px;
+	float: left;
+	background: linear-gradient(0deg, rgb(117, 118, 119) 2.94%, rgb(220, 220, 220) 100%);
+	border: 1px solid #B1B2B3;
+	margin-top: 18px;
+	border-radius: 50%;
+}
+
+.iconeCarrinhoNull {
+	font-size: 1.3em;
+	height: 45px;
+	width: 45px;
+	color: #666666;
+	text-align: center;
+	margin-top: 5px;
+	padding-right: 2px;
+}
+
+
+.centerCarrinhoNull.corrente {
+	border-top: 2px solid #7C7C7C;
+	margin-right: 10px;
+}
+
+.centerCarrinhoNull {
+	margin-top: 37px;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 20px;
+	margin-left: 51px;
+	color: #7C7C7C;
+	display: flex;
+	justify-content: center;
+}
+
+.continuaComprando {
+	text-decoration: none;
+	color: #54E82D;
+	text-transform: uppercase;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.continuaComprando:hover {
+	text-decoration: none;
+	color: #00C037;
+	font-size: 13px;
+}
